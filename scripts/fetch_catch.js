@@ -8,7 +8,7 @@ document.getElementById('btn').addEventListener('click', function (e) {
       })
       .then(function (data) {
         document.getElementById('result').textContent = data;
-      });
+      })
       .catch(function(error) {
           window.alert('Error: ' + error.messgae)
       });
