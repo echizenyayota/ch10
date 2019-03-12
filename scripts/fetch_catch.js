@@ -10,6 +10,6 @@ document.getElementById('btn').addEventListener('click', function (e) {
         document.getElementById('result').textContent = data;
       })
       .catch(function(error) {
-          window.alert('Error: ' + error.messgae)
+          window.alert('Error: ' + error.message)
       });
 }, false);
