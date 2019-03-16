@@ -1,5 +1,9 @@
 <?php
 $name = htmlspecialchars($_POST['name'], ENT_QUOTES | ENT_HTML5, 'UTF-8');
-if ($name !== '') {
+// if ($name !== '') {
+//     print('こんにちは、' . $name . 'さん！');
+// }
+
+if (isset($_POST['name'])) {
     print('こんにちは、' . $name . 'さん！');
 }
