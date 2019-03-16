@@ -7,7 +7,7 @@ btn.addEventListener('click', function(e) {
     let data = new FormData(myform);
     fetch('fetch_post.php', {
         method: 'POST',
-        body: 'data',
+        body: data,
     })
         .then(function(response) {
             return response.text();
